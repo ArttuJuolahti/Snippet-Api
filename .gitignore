@@ -1,0 +1,31 @@
+# Dependencies - installed from package.json, never committed
+node_modules/
+
+# Environment files - may contain secrets or local configuration
+.env
+.env.*
+!.env.example
+
+# Local database files and dumps (student database keys / data)
+*.sqlite
+*.db
+*.sqlite3
+dump.sql
+backups/
+
+# Logs and caches - noisy files created at runtime or by development tools
+*.log
+logs/
+npm-debug.log
+.eslintcache
+
+# Build outputs and coverage - files that can be regenerated from source code
+dist/
+build/
+coverage/
+
+# OS and editor artefacts - machine specific files that don't belong in Git
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
